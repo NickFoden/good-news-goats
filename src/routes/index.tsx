@@ -3,7 +3,7 @@ import { mount, route } from "navi";
 export default mount({
   "/": route({
     title: "Good News Goats",
-    getView: () => import("./index.mdx")
+    getView: () => import("../pages/Temp")
   }),
 
   "/projects": route({
