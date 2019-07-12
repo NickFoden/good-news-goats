@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, View, NotFoundBoundary, useLoadingRoute } from "react-navi";
 import { MDXProvider } from "@mdx-js/react";
+// import Header from "./components/Header";
 import "./App.css";
 
 function App() {
@@ -8,17 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <nav className="App-nav">
-          <Link href="/" activeClassName="active" exact>
-            Home
-          </Link>
-          <Link href="/projects/" activeClassName="active">
-            Projects
-          </Link>
-        </nav>
-      </header>
-
+      {/* <Header /> */}
       <main>
         <NotFoundBoundary render={renderNotFound}>
           <div
